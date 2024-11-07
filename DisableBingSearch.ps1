@@ -3,7 +3,7 @@ $Name = "BingSearchEnabled"
 $Value = "0"
 
 # This guard has not been tested for a positve case
-If (-NOT (Test-Path $RegistryPath)) {
+if (-NOT (Test-Path $RegistryPath)) {
 	Write-Output "The key `"$RegistryPath`" does not exist"
 	Break
 }
@@ -18,5 +18,5 @@ elseif ( $args[0] -eq "revert" ) {
 	Write-Output "$Name variable has been removed from $RegistryPath (therefore Bing search is probably auto-enabled)."
 }
 else {
-	Write-Output "Unknown arguments"
+	Write-Output "Unknown argument(s). No changes has been done."
 }
