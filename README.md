@@ -1,5 +1,5 @@
 # DisableBingSearch
-A PowerShell script disabling Bing search in Search Box in Windows 10 (Windows 11 has not been tested); which is achieved by addition of a set to 0 flag "BingSearchEnabled" to "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search". If the flag does not exist, Bing search is enabled by default in Windows 10.
+A PowerShell script disabling Bing search in Search Box in Windows 10 and Windows 11; which is achieved by addition of a set to 0 flag "BingSearchEnabled" to "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search". If the flag does not exist, Bing search is enabled by default in Windows 10.
 
 # Usage
 To disable Bing search in Search Box:
